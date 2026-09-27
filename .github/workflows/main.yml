@@ -1,0 +1,16 @@
+name: first gitub project
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  print_welcome_meg:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: print welcome msg to the console using shell command
+         run: echo "Hello first job runs successfully"
+      
+  
