@@ -20,4 +20,4 @@ jobs:
 
     steps:
       - name : check manual trigger
-        run: echo "manual trigger is activated."
+        run: echo "manual trigger is activated. envorment is ${{inputs.environment-selection}}"
