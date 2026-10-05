@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
     inputs:
       environment-selection:
-        description: "chosse environment you want to deploy to."
+        description: "Choose the environment you want to deploy to."
         required: true
         default: staging
         type: choice
