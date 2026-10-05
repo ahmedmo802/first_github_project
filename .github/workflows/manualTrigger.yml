@@ -1,5 +1,18 @@
 on:
   workflow_dispatch:
+    inputs:
+      environment-selection:
+        description: "chosse environment you want to deploy to."
+        required: true
+        default: staging
+        type: choice
+        options:
+          - staging
+          - dev
+          - QA
+          - production
+          
+      
 
 jobs:
   deploy-approved:
