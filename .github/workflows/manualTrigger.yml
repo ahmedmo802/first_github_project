@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-approved:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name : check manual trigger
+        run: echo "manual trigger is activated."
